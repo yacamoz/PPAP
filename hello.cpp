@@ -1,16 +1,11 @@
-#include <stdio.h>
+#include <stdbool.h>
 int main()
 {
-    int num1;
-    int num2;
-    int num3;
+    bool b1;
+    bool b2;
 
-    num1 = 10;
-    num2 = 5;
-    num3 = 1;
+    b1 = true;
+    b2 = false;
     
-    printf("%d, %d, %d", num1, num2, num3);
-
-    printf("\nhello world!");
     return 0;
 }    
