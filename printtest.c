@@ -1,11 +1,18 @@
 #include <stdio.h>
+
 int main()
 {
-    printf("HongGilDong\nHong Gil Dong\nHong  Gil  Dong\n");
-    // Korean doesn't work
-    printf("my name is 손병규");
-    printf("\nMy phone number: %s-%d-%d", "010", 27273, 3177);
-    printf("\nMy home address: GUMI, Song Dong Lo %d", 128);
+	printf("password:");
+	int num1;
+	scanf_s("%d", &num1);
+	printf("one more:");
+	int num2;
+	scanf_s("%d", &num2);
+	
+	if (num1 == num2)
+		printf("correct!");
+	else
+		printf("fail, idiot");
 
-    return 0;
+	return 0;
 }
