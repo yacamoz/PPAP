@@ -1,2 +1,2 @@
 ﻿  test.cpp
-C:\pythonnori\PPAP\honeyjam\honeyjam\test.cpp(8): error C4700: 초기화되지 않은 'total' 지역 변수를 사용했습니다.
+  honeyjam.vcxproj -> C:\pythonnori\PPAP\honeyjam\Debug\honeyjam.exe

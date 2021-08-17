@@ -2,14 +2,17 @@
 
 int main()
 {
-    int dan = 0, num = 1;
-    printf("몇 단?");
-    scanf("%d %d", &dan, &num);
-    while (num<10, dan<10)
+    int a = 1, b = 1;
+    while (a++<10)
     {
-        printf("%dx%d=%d\n", dan, num, dan*num);
-        num++;
-        dan++;
+        b = 1;
+        while (b++<10)
+        {
+            printf("%2dx%d=%3d ", a, b, a*b);
+            
+        }
+        printf("\n");
+        
     }
     return 0;
 }
