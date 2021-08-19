@@ -172,7 +172,7 @@
 	}
 	return 0;
 }*/
-int main()
+/*int main()
 {
 	int ID, PW, myID, myPW;
 	ID = 777;
@@ -207,4 +207,4 @@ int main()
 		}
 	}
 	return 0;
-}
+}*/
