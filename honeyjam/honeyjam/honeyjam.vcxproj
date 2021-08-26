@@ -139,6 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Debug\baeyeol.c" />
+    <ClCompile Include="Debug\dojeon.c" />
+    <ClCompile Include="Debug\honeyjam.tlog\multichawon.c" />
+    <ClCompile Include="Debug\honeyjam.tlog\pointer.c" />
+    <ClCompile Include="Debug\lotto.c" />
     <ClCompile Include="hamsu.c" />
     <ClCompile Include="jogun.cpp" />
   </ItemGroup>

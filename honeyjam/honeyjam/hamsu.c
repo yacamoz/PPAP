@@ -253,7 +253,7 @@ int main()
 	recursive(3);
 	return 0;
 }*/
-int factorial(int n)
+/*int factorial(int n)
 {
 	if (n == 0)
 		return 1;
@@ -267,4 +267,11 @@ int main()
 	printf("7! = %d\n", factorial(7));
 	printf("10! = %d\n", factorial(10));
 	return 0;
-}
+}*/
+/*int main()
+{
+	int num = 0;
+	scanf("%d", &num);
+	printf("%x", num);
+	return 0;
+}*/

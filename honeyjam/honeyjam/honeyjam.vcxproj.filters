@@ -21,5 +21,20 @@
     <ClCompile Include="hamsu.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Debug\dojeon.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\baeyeol.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\lotto.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\honeyjam.tlog\multichawon.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\honeyjam.tlog\pointer.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
