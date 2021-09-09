@@ -70,7 +70,7 @@ class truck extends Vehicle{
 	}
 }
 
-class bycicle extends Vehicle{
+class bycicle extends Vehicle{ 
 	private int number;
 	
 	public bycicle() {

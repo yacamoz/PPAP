@@ -6,7 +6,7 @@ public class moonje0302 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int num=5;
+		int num;
 		System.out.print("ют╥б:");
 		num=sc.nextInt();
 		for(int i=0;i<num;i++) {

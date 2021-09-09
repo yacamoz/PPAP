@@ -21,11 +21,11 @@ public class mainmain {
 		switch(num) {
 		case 1: {
 			for(int i=0;i<5;i++) {
-			System.out.printf("어떤 차량을 등록하실 겁니까?\n1.일반차량\n2.트럭\n3.오토바이\n");
+			System.out.printf("어떤 차량을 등록하실 겁니까?\n1.일반차량\n2.트럭\n3.오토바이");
 			num=sc.nextInt();
 			switch(num) {
 			case 1: {
-				System.out.print("등록 아이디 입력:");
+				System.out.print("\n등록 아이디 입력:");
 				id=sc.next();
 				System.out.print("\n차량명 입력:");
 				name=sc.next();
@@ -106,7 +106,7 @@ public class mainmain {
 			id=sc.next();
 			for(int i=0;i<5;i++) {
 				if(vhc[i].getID().equals(id)) {
-					vhc[i]=null;
+					vhc[i]=new Vehicle();
 					System.out.printf("%s차량 삭제완료!", id);
 					break;
 				}

@@ -44,7 +44,7 @@ class rcp{
 public class rcpmain {
 
 	public static void main(String[] args) {
-		lottery lot = new lottery(12000);
+		lottery lot = new lottery(8000);
 		lot.lotteryy();
 		lot.shownum();
 	}
