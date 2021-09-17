@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            /*변수선언*/
+            counter-increment: rint;
+            /*번호를 1씩 붙여가는 태그*/
+        }
+        p::before{
+            content:counter(rint)".";
+        }
+        p::after{
+            content:"-"attr(date-page) "page";
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <p data-page="52">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, dignissimos.</p>
+    <p data-page="273">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, laboriosam.</p>
+</body>
+</html>
