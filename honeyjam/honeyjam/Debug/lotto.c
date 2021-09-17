@@ -34,18 +34,18 @@ int judge(int arr[])
     {
         sum += judarr[i];
     }
-    // 추가 점수 코드
+    // 추가 점수
     int arr2[9] = { 13,15,19,20,27,30,34,38,43 };
     for (int i = 0; i < 6; i++)
     {
         for (int j = 0; j < 8; j++)
             if (arr[i] == arr2[j])
+            {
                 sum += 1;
-        break;
+                break;
+            }
     }
-
     return sum;
-    
 }
 int main()
 
@@ -84,7 +84,6 @@ int main()
                 printf("\n");
 
                 printf("이 조합의 점수는: %d점\n", judge(lotto));
-                printf("이 조합의 추가점수는: %d점\n", addpoint(lotto));
             }
     return 0;
 
@@ -105,19 +104,4 @@ void SelectionSort(int arr[], int n)
         arr[i] = arr[p];
         arr[p] = temp;
     }
-}
-int addpoint(int arr[])
-{
-    int sum = 0;
-    int arr2[9] = { 13,15,19,20,27,30,34,38,43 };
-    for (int i = 0; i < 6; i++)
-    {
-        for (int j = 0; j < 8; j++)
-            if (arr[i] == arr2[j])
-            {
-                sum += 1;
-                break;
-            }
-    }
-    return sum;
 }
