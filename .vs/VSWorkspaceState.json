@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\honeyjam",
-    "\\honeyjam\\honeyjam"
+    "\\honeyjam\\Debug",
+    "\\honeyjam\\honeyjam",
+    "\\honeyjam\\honeyjam\\Debug",
+    "\\honeyjam\\honeyjam\\Debug\\honeyjam.tlog"
   ],
-  "SelectedNode": "\\honeyjam\\honeyjam\\baeyeol.cpp",
+  "SelectedNode": "\\honeyjam\\honeyjam\\Debug\\new.c",
   "PreviewInSolutionExplorer": false
 }
