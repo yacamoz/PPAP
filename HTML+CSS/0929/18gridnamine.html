@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container
+        {
+            display:grid;
+            gap:10px;
+            grid-template-columns: 500px 1fr;
+            grid-template-rows: 1fr 200px 1fr;
+            grid-template-areas:
+            'header header'
+            'aside section'
+            'footer footer';
+        }
+        #container>div
+        {
+            border: 1px solid black;
+            background-color: purple;
+        }
+        .header
+        {
+            grid-area:header;
+        }
+        .aside{grid-area:aside;}
+        .section{grid-area:section;}
+        .footer{grid-area:footer;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="header">
+            <h1>Vardy's On Fire</h1>
+        </div>
+        <div class="aside">
+            <h1>Vardy's On Fire</h1>
+        </div>
+        <div class="section">
+            <h1>Vardy's On Fire</h1>
+        </div>
+        <div class="footer">
+            <h1>Vardy's On Fire</h1>
+        </div>
+    </div>
+</body>
+</html>

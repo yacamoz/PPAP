@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{width: 100px; height: 100px}
+        .minibox{
+            width: 200px; height:30px;
+            position: absolute;
+        }
+        .red{background-color: red;
+        /*position:static; 이건 어차피 기본 값*/
+            left:50px;
+            top:50px
+        }
+        .green{background-color: green;
+            position: fixed;
+            left:30px;
+            top:50px;
+        }
+        .blue{background-color: blue;}
+        .pink{
+            left:500px;
+            top:500px;
+
+            background-color: pink;}
+    </style>
+</head>
+<body>
+    <div class="box red">
+        <div class="minibox pink">zaza</div>
+    </div>
+    <div class="box green">
+        <div class="minibox pink">gaga</div>
+    </div>
+    <div class="box blue"></div>
+</body>
+</html>
