@@ -1,3 +1,7 @@
-print('hello world!')
-a=1; b=2; c=a+b
-print(c)
+urllink = open("IBIS-global-market.csv", "r", encoding="utf8")
+while True:
+    line = urllink.readline()
+    if not line:
+        break
+    print(line, end="")
+urllink.close()
