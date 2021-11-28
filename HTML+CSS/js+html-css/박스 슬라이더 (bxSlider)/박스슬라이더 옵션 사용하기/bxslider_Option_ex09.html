@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/jquery.bxslider.css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/jquery.bxslider.min.js"></script>
+  
+ <style>
+    #outer{
+      width:600px;
+      height:600px;
+    }
+  </style>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider(
+        {
+          auto:true, //자동으로 넘기기
+          speed:500, //페이지 넘어갈때 0.5초
+          pause:2000, //한 페이지 머무르는 시간 2초
+          autoControls: true, //자동재생 제어창
+          pager:false, //페이지 바로가기 버튼 (false - 없애기)
+          mode:'vertical', //수직 이동
+          captions:true //캡션 사용하기
+         }
+      );
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <div id="outer">
+    <div class="slider">
+      <div>
+        <div style="position:absolute;"><h1>이미지 위에 텍스트</h1></div>
+        <img src="./img/img1.jpg" title="이미지1 캡션">
+      </div>
+      <div>
+        <img src="./img/img2.jpg">
+      </div>
+      <div>
+        <img src="./img/img3.jpg">
+      </div>
+  </div>
+
+  </div>
+ 
+</body>
+</html>

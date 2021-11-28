@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+        
+        li {
+            color: red;
+            background-color: blue;
+            width: 100px;
+            height: 50px;
+            /*요소 사이 간격이 마진이다 (margin)*/
+            margin-bottom: 10px;
+        }
+        
+        ul>li>img {
+            width: 50px;
+            height: 30px;
+        }
+        /*
+        > : 하위 선택자 
+        ul한단계 밑에 li 한단계 밑에 img태그
+        */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>개<img src="./images/lion.jpg"></li>
+        <li>고양이<img src="./images/lion.jpg"></li>
+        <li>햄스터<img src="./images/lion.jpg"></li>
+    </ul>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 100px 200px;
+        }
+        
+        #wrap {
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            position: relative;
+            /*
+            여기 쓰인 relative는
+            wrap을 움직이려고 넣은게 아니고
+            하위요소가 기준점 잡으라고 만들어준것...
+            하위요소에서 absolute하면...
+            wrap기준으로 위치를 잡는다.
+            */
+        }
+        
+        #wrap>div {
+            width: 100px;
+            height: 100px;
+        }
+        
+        #box1 {
+            background-color: red;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+        
+        #box2 {
+            background-color: green;
+        }
+        
+        #box3 {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="box1">
+            박스1
+        </div>
+        <div id="box2">
+            박스2
+        </div>
+        <div id="box3">
+            박스3
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+#header>#logo{
+    float:left;
+    width:200px;
+    height:100px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    background-color: burlywood;
+}
+#header>#nav{
+    float:left;
+    width:1000px;
+    height:100px;
+    padding-top: 20px;
+    padding-right:20px;
+    position:relative;
+    box-sizing: border-box;
+    background-color: cornflowerblue;
+}
+#header>#nav>ul{
+    display:block;
+    list-style-type: none;
+    background-color: darkgreen;
+}
+#nav>ul>li{
+    float:right;
+    outline:1px solid green;
+}
+#gnb>li>a{
+    display:inline-block;
+    width:100px;
+    height:40px;
+    background-color: indianred;
+    text-align: center;
+    padding-top: 10px;
+    color:#222328;
+}
+#lnb>li>a{
+    display:block;
+    position:absolute;
+    width:100px;
+    height:40px;
+    background-color: indigo;
+    text-align: center;
+    padding-top: 10px;
+    color:#222328;
+    z-index: 4;
+}
+#gnb li a:hover{
+    color:azure;
+    background-color: rgb(17, 128, 13);
+}
+#lnb:hover{
+    display:block;
+}

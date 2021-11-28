@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //호이스팅
+        //hoist - 끌어올리다.
+        //hoisting - 끌어올리는것
+        //함수 선언(정의),변수 선언이 최상단으로 끌어올려진다.
+        var num = add(3, 4)
+        document.write(num, "<br>") //7
+
+        num = add(5, 8)
+        document.write(num, "<br>") //13
+
+        function add(n1, n2) {
+            return n1 + n2
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

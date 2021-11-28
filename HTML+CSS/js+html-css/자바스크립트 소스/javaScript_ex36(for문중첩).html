@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        for (var dan = 2; dan <= 9; dan++) { //외부 for문
+            for (var i = 1; i <= 9; i++) { //내부 for문
+                document.write(dan + "x" + i + "=" + (dan * i), "<br>");
+            }
+            document.write("<br>")
+        }
+        //초기식,조건식,내부식,증가식
+        //조건식,내부식,증가식
+        //조건식,내부식,증가식
+        //...
+        //외부 for문 값이 하나 정해지고, 내부 for문 다돈다.
+        //dan=2 , i=1~9
+        //dan=3 , i=1~9
+        //...
+        //dan=9 , i=1~9
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

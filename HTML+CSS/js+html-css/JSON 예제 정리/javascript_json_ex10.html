@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> JSON </title>
+<script src="js/jquery.js"></script>
+<script>
+  //단일 JSON데이터 { } 
+  //단순 배열 [ 1,2,3 ]
+  //JSON 배열 [ { }, { }, { } ]
+  var arr = [1,2,3]; //단순 배열
+
+  //단일 JSON 데이터
+  var obj = {name:'푸들',age:1,country:'영국'};
+
+  //JSON배열
+  var dog = [
+    {name:'푸들',age:1,country:'영국'}, //dog[0]
+    {name:'진돗개',age:2,country:'한국'}, //dog[1]
+    {name:'시바',age:3,country:'일본'} //dog[2]
+    ]
+
+    for(var i=0; i<dog.length; i++){
+      document.write("name:"+dog[i].name,"<br>");
+      document.write("age:"+dog[i].age,"<br>");
+      document.write("country:"+dog[i].country,"<br>");
+      document.write("<br>");
+    }
+
+</script>
+</head>
+<body>
+
+  
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(document).on("keydown", keyEventFnc);
+            //keydown (키가 눌려졌을때, keyEventFnc호출하라)
+
+            function keyEventFnc(e) {
+                //매개변수 e에 이벤트 객체가 들어온다.
+                //이벤트 객체에는 이벤트 관련 정보가있고...
+                var direct = "";
+                switch (e.keyCode) {
+                    case 37: //LEFT
+                        direct = "LEFT";
+                        break;
+                    case 38: //TOP
+                        direct = "TOP";
+                        break;
+                    case 39: //RIGHT
+                        direct = "RIGHT";
+                        break;
+                    case 40: //BOTTOM
+                        direct = "BOTTOM";
+                        break;
+                    case 65: //'A'
+                        direct = "A";
+                        break;
+                }
+                if (direct) {
+                    $("#user_id").val(direct)
+                }
+
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <p>
+        <input type="text" name="user_id" id="user_id">
+    </p>
+</body>
+
+</html>

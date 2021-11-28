@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //재귀함수(recursive function)
+        //recursive - 재귀적인
+        //재귀 - 다시 돌아오는~
+        //자기 자신 정의안에, 자기 자신 호출이 있다.
+
+        //Recursive함수 정의
+        //종료조건이 있는 재귀함수
+        function Recursive(n) {
+            if (n == 0) { //재귀함수 종료 조건
+                return //return만 쓰면 그냥 함수 종료
+            }
+            console.log("재귀함수", n)
+            Recursive(n - 1) //Recursive함수 호출
+        }
+        Recursive(3) //Recursive함수 호출
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

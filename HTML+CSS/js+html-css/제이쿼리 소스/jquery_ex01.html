@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //DOM TREE가 완성되면 ready메서드 콜백함수가 실행된다.
+            $("#title").css("color", "red");
+            //아이디가 title인 요소에 접근해서 글자색깔 빨간색으로 변경한다.
+            //$ - selector - 선택자 (요소 선택)
+            //css 메서드 (HTML 꾸밀때...)
+            //document.getElementById("title").style.color="red";
+        })
+    </script>
+</head>
+
+<body>
+    <h1 id="title">제목</h1>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*
+        position속성
+        모든 요소는 
+        기본적으로 static(정적인)으로 되어있어서
+        안움직인다.
+
+        position종류
+        static,relative,absolute,fixed
+        주로 relative,absolute를 잘 섞어서 쓴다.
+        fixed 주로 팝업창이나, 검색창 고정
+
+        relative는
+        현재위치 얼만큼 이동~
+        relative는 현재위치에서 얼만큼
+        이동하려고 쓰는것도 있고
+        하위요소의 기준점이 되려는 목적도 있다.
+
+        absolute는
+        조상위치 기준으로 얼만큼 이동~
+        absolute를 사용한 상위요소 중에서
+        relative,absolute,fixed인것 기준
+        */
+        
+        #wrap {
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+        }
+        
+        #wrap>div {
+            width: 100px;
+            height: 100px;
+        }
+        
+        #box1 {
+            background-color: red;
+        }
+        
+        #box2 {
+            background-color: green;
+            position: relative;
+        }
+        
+        #box3 {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="box1">
+            박스1
+        </div>
+        <div id="box2">
+            박스2
+        </div>
+        <div id="box3">
+            박스3
+        </div>
+    </div>
+</body>
+
+</html>

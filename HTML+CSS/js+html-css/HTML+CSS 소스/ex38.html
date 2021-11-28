@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        #bot-menu {
+            width: 300px;
+            height: 100px;
+            background-color: fuchsia;
+        }
+        
+        #bot-menu>ul {
+            width: 280px;
+            height: 80px;
+            background-color: forestgreen;
+        }
+        
+        #bot-menu>ul>li {
+            float: left;
+            margin-right: 12px;
+            position: relative;
+        }
+        
+        #bot-menu>ul>li::after {
+            content: '';
+            width: 1px;
+            height: 20px;
+            background-color: black;
+            position: absolute;
+        }
+        
+        #bot-menu>ul>li:first-child::after {
+            left: 85px;
+            top: 5px;
+        }
+        
+        #bot-menu>ul>li:nth-child(2)::after {
+            left: 85px;
+            top: 5px;
+        }
+        
+        #bot-menu>ul>li:nth-child(3)::after {
+            /*
+            메뉴가 3개라서 가상요소가 3개 필요없다.
+            3번째 리스트의 가상요소는 없앴다.
+            */
+            width: 0px;
+            height: 0px;
+            background-color: none;
+        }
+        
+        #bot-menu>ul>li>a {
+            display: block;
+            width: 80px;
+            height: 30px;
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <!--가상요소가 많이 쓰이는곳은 메뉴 구분하는 바(bar)-->
+    <div id="bot-menu">
+        <ul>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">멤버가입</a></li>
+            <li><a href="#">로그인</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

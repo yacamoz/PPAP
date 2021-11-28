@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //prompt함수로 받은 입력은 문자열이된다.
+        //숫자로 쓰고 싶으면 데이터타입 변환해야된다.
+        var num1 = prompt("숫자1 입력")
+            //var num1="3.14"
+        var num2 = prompt("숫자2 입력")
+            //var num1="3.2"
+            //파싱플롯 함수
+        num1 = parseFloat(num1) //num1을 실수로 변환해서 저장
+        num2 = parseFloat(num2) //num2을 실수로 변환해서 저장
+        var result = num1 + num2 //6.34
+        document.write(result, "<br>")
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

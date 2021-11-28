@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .on {
+            color: green;
+            font-weight: bold;
+        }
+
+        .off {
+            color: red;
+            font-weight: normal;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                if ($("#btn").hasClass("off") == true) {
+                    $("#btn").removeClass("off")
+                    $("#btn").addClass("on")
+                    $("#btn").text("on")
+                } else if ($("#btn").hasClass("on") == true) {
+                    $("#btn").removeClass("on")
+                    $("#btn").addClass("off")
+                    $("#btn").text("off")
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="btn" class="off">off</button>
+</body>
+
+</html>

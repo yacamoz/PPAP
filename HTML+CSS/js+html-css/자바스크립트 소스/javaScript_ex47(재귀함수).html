@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //재귀함수(recursive function)
+        //recursive - 재귀적인
+        //재귀 - 다시 돌아오는~
+        //자기 자신 정의안에, 자기 자신 호출이 있다.
+
+        //Recursive함수 정의
+        function Recursive() {
+            console.log("재귀함수")
+            Recursive() //Recursive함수 호출
+        }
+        Recursive() //Recursive함수 호출
+            //Maximum call stack size exceeded
+            //함수 호출 너무 많이해서,스택 메모리 넘쳤다.
+
+        //무한 재귀함수
+        //종료가 안된다.
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

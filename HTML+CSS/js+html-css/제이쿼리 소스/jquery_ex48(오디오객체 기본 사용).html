@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        var music_list = ["./audio/my_piano1.mp3", "./audio/my_piano2.mp3", "./audio/my_piano3.mp3"];
+        var audio = new Audio();
+        var idx = 0 //배열 index
+        audio.src = music_list[idx]
+        //source
+        function start_music() {
+            audio.play()
+            //audio객체의 내장 메서드 play로 재생
+            alert(audio.duration)
+        }
+
+        function pause_music() {
+            audio.pause() //중지
+        }
+
+        function stop_music() {
+            audio.pause() //중지
+            audio.currentTime = 0 //시간을 0으로
+        }
+        //이전,다음 버튼 만들어보기
+        function prev_music() {}
+
+        function next_music() {
+            idx++
+            if (idx > 2) {
+                idx = 0
+            }
+            audio.src = music_list[idx]
+            audio.play()
+            alert(audio.duration)
+        }
+    </script>
+</head>
+
+<body>
+    <button onClick="prev_music()">이전</button>
+    <button onClick="next_music()">다음</button>
+    <button onClick="start_music()">시작</button>
+    <button onClick="pause_music()">중지</button>
+    <button onClick="stop_music()">끄기</button>
+</body>
+
+</html>

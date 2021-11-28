@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my_red {
+            color: red;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var result = $('span').hasClass("my_red")
+            //span에 my_red클래스가 있는가?
+            //span이 my_red클래스를 가지고 있는가?
+            //있으면 true가 반환되고, 없으면 false가 반환된다.
+            console.log(result) //true
+
+            $('span').removeClass("my_red") //span에 my_red클래스 제거
+            result = $('span').hasClass("my_red") //my_red클래스 있는가?
+            console.log(result) //false
+        })
+    </script>
+</head>
+
+<body>
+    <span class="my_red">스팬</span>
+</body>
+
+</html>

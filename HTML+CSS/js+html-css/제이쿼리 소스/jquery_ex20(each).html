@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var obj = [{
+                    "area": "서울",
+                    "name": "이민호"
+                },
+                {
+                    "area": "부산",
+                    "name": "정채연"
+                },
+                {
+                    "area": "전주",
+                    "name": "정기석"
+                },
+            ]
+            $(obj).each(function (i, o) {
+                console.log(i + ":", o);
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

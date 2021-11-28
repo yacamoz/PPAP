@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> JSON </title>
+<script src="./js/jquery.js"></script>
+<script>
+
+  //JSON배열
+  var dog = [
+    {name:'푸들',age:1,country:'영국'}, //dog[0]
+    {name:'진돗개',age:2,country:'한국'}, //dog[1]
+    {name:'시바',age:3,country:'일본'} //dog[2]
+    ]
+
+    dog.push({name:'셰퍼드',age:4,country:'독일'});
+
+    dog=dog.filter(data => data.name!='진돗개');
+    //화살표 함수
+    //화살표 함수 표현(arrow function expression)은 function 표현에 비해 구문이 짧고 
+    //바인딩이 필요 없음
+    
+    
+    for(var i=0; i<dog.length; i++){
+      document.write("name:"+dog[i].name,"<br>");
+      document.write("age:"+dog[i].age,"<br>");
+      document.write("country:"+dog[i].country,"<br>");
+      document.write("<br>");
+    }
+
+</script>
+</head>
+<body>
+
+  
+  </body>
+</html>

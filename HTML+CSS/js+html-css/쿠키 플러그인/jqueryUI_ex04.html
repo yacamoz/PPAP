@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 UI</title>
+    <style>
+        #notice_wrap {
+            width: 350px;
+            height: 500px;
+            border: 1px solid black;
+        }
+
+        #notice_wrap>img {
+            width: 350px;
+            height: 450px;
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+
+    <script>
+        $(function () {
+            if ($.cookie("popup") == "none") {
+                $("#notice_wrap").hide();
+            }
+
+            var $expChk = $("#expiresChk");
+            $(".closeBtn").on("click", closePop);
+
+            function closePop() {
+                if ($expChk.is(":checked")) {
+                    $.cookie("popup", "none", {
+                        expires: 7,
+                        path: "/"
+                    });
+                }
+                $("#notice_wrap").fadeOut("fast");
+            }
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div id="notice_wrap">
+
+        <img src="images/dglib.jpg" alt="공지사항">
+
+        <p class="closeWrap">
+            <input type="checkbox" name="expiresChk" id="expiresChk">
+            <label for="expiresChk">7일 동안 이 창 열지 않기</label>
+            <button class="closeBtn">닫기</button>
+        </p>
+
+    </div>
+</body>
+
+</html>

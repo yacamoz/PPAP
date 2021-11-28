@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#fade03").click(function () {
+                $("#box").fadeTo("fast", 0.3);
+            })
+            $("#fade07").click(function () {
+                $("#box").fadeTo("fast", 0.7);
+            }) //fadeTo는 투명도 설정  
+        })
+    </script>
+</head>
+
+<body>
+    <button id="fade03">투명도 30%</button>
+    <button id="fade07">투명도 70%</button>
+    <div id="box">
+        박스
+    </div>
+
+</body>
+
+</html>

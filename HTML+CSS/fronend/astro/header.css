@@ -1,0 +1,36 @@
+#header>#logo{
+    float:left;
+    width:200px;
+    height:100px;
+}
+#header>#nav{
+    float:left;
+    width:1000px;
+    height:100px;
+}
+#nav>#gnb{
+    padding-top: 50px;
+}
+#nav>#gnb>li{
+    width:100px;
+    height:40px;
+    text-align: center;
+    display:block;
+    float:right;
+    background-color:bisque
+}
+#lnb>li{
+    display:block;
+    background-color: crimson;
+}
+#gnb li a:hover {
+    background-color: grey;
+    color: black;
+    display:block;
+}
+#gnb li:hover #lnb{
+    display:block;
+}
+#lnb{
+    display:none;
+}

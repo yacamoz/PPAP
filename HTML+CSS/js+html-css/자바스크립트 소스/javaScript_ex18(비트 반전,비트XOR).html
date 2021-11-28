@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //비트 반전 : ~
+        var num = 10
+        var result = ~num
+            //00000000 00000000 00000000 00001010 - 10 (num)
+            //11111111 11111111 11111111 11110101 - ?? (~num)
+            //정수비트에서 제일왼쪽:부호표현비트,MSB
+            //Most Significant Bit (가장 중요한 비트)
+        document.write(result, "<br>")
+
+        var num1 = 5;
+        //00000000 00000000 00000000 00000101
+        var num2 = 3;
+        //00000000 00000000 00000000 00000011
+        result = num1 ^ num2
+            //num1과 num2의 비트를 XOR해라
+            //00000000 00000000 00000000 00000101
+            //00000000 00000000 00000000 00000011 ^
+            //00000000 00000000 00000000 00000110
+        document.write(result, "<br>") //6
+            //XOR - Exclusive OR - 배타적인 OR
+            //Exclusive - 배타적인
+            //Exclude - 배제하다
+            //입력이 다를때만 결과가 1이다.
+            //0^0-> 0
+            //0^1-> 1
+            //1^0-> 1
+            //1^1-> 0
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

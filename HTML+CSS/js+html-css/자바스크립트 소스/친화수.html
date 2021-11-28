@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var chin = prompt("입력");
+        var hwasu = prompt("친화수 후보");
+        hwasu=Number(hwasu);
+        chin=Number(chin);
+        var total=0;
+        for(var i=0;i<=chin/2;i++){
+            if(chin%i==0){
+                total+=i;
+            }
+        }
+        if (hwasu!=total){
+            document.write(hwasu+"는 친화수가 아니었습니다!"+"<br>");
+            document.write(chin+"의 친화수는 "+total);
+        } else {
+            document.write("친화수 맞음 ㅊㅊ");
+        }
+    </script>
+</body>
+</html>

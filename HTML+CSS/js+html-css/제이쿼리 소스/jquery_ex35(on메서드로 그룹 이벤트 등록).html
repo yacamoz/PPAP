@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").on({
+                mouseover: function () {
+                    $("#btn").parent().next()
+                        .css("backgroundColor", "red");
+                    //$("#para")
+                },
+                mouseout: function () {
+                    $("#btn").parent().next()
+                        .css("backgroundColor", "blue");
+                },
+                click: function () {
+                    $("#btn").parent().next()
+                        .css("backgroundColor", "green");
+                }
+            })
+        })
+        //on - 그룹 이벤트 등록 가능
+        //여러개의 이벤트 등록
+    </script>
+</head>
+
+<body>
+    <p>
+        <button id="btn">버튼</button>
+    </p>
+    <p id="para">
+        내용
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my_div {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var w = $("#my_div").width(); //getter
+            var h = $("#my_div").height(); //getter
+            console.log('가로', w);
+            console.log('세로', h);
+            $("#my_div").width('150px'); //setter
+            $("#my_div").height('50px'); //setter
+        })
+    </script>
+</head>
+
+<body>
+    <div id="my_div">
+        사각형
+    </div>
+</body>
+
+</html>

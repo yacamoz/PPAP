@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h4::before {
+            content: "Hello~!";
+            color: red;
+            font-weight: bold;
+        }
+        
+        h4::after {
+            content: "^^~!";
+            color: green;
+            font-weight: bold;
+        }
+        
+        p::before {
+            content: open-quote;
+        }
+        
+        p::after {
+            content: close-quote;
+        }
+    </style>
+</head>
+
+<body>
+    <!--가상요소
+    실제로 보이진 않는데 css효과를 줘서 영역을 만들거나,꾸미거나
+    ::before
+    ::after
+    -->
+    <h4>tiger</h4>
+    <p>
+        Test1!
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //전역변수,지역변수
+        //전역변수 (global variable)
+        //함수 외부에서 선언한변수
+        //프로그램 전체에서 접근가능
+
+        //지역변수 (local variable)
+        //함수 내부에서 선언한변수
+        //함수 내부만 접근가능
+        //함수가 종료되면 소멸된다.
+
+        var num = 3 //전역변수
+            //프로그램이 종료되야 사라진다.
+        function hello() {
+            var num = 4 //지역변수
+                //함수 내부에서는 지역변수가 전역변수보다 우선시된다.
+            document.write("Hello:" + num, "<br>") //4 (지역변수)
+        }
+        hello()
+        document.write("Hello:" + num, "<br>") //3 (전역변수)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

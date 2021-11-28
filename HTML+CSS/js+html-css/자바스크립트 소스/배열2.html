@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr=new Array(0,0);
+        var gwamok = prompt("과목몇개");
+        gwamok=Number(gwamok)
+        var student = prompt("학생 몇명");
+        student=Number(student)
+        for(var i=0;i<=student;i++){
+            for(var j=0;j<=gwamok;j++)
+            arr[i][j]=prompt("학생"+(i+1)+"의 성적")
+        }
+        for(var i=0;i<=student;i++){
+            for(var j=0;j<=gwamok;j++)
+            document.write(arr[i][j])
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

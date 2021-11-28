@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    color:#222328;
+}
+
+#wrap{
+    width:1000px;
+    height:650px;
+    background-color: aqua;
+}
+
+#header{
+    float:left;
+    width:200px;
+    height:650px;
+    background-color: aquamarine;
+    z-index: 2;
+    position:relative;
+}
+#header>#logo{
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+#header>#nav{
+    width:200px;
+    height:550px;
+    background-color: cadetblue;
+    padding-top: 20px;
+    padding-right:20px;
+    box-sizing: border-box;
+}
+#gnb>li>a{
+    display:block;
+    width:100px;
+    height:40px;
+    background-color: indianred;
+    text-align: center;
+    padding-top: 5px;
+}
+#right-side{
+    float:left;
+    width:800px;
+    height:650px;
+    background-color: blue;
+}
+#right-side>#slide{
+    width:800px;
+    height:350px;
+    background-color: blueviolet;
+}
+#right-side>#content{
+    width:800px;
+    height:200px;
+    background-color: chocolate;
+    display:flex;
+}
+#right-side>#content>#info{
+    float:left;
+    flex:1;
+    background-color: royalblue;
+}
+#right-side>#content>#banner{
+    float:left;
+    flex:1;
+    background-color: rgb(139, 19, 150);
+}
+#right-side>#content>#links{
+    float:left;
+    flex:1;
+    background-color: rgb(23, 182, 71);
+}
+#footer{
+    width:800px;
+    height:100px;
+    background-color: coral;
+}
+#footer>#foot-logo{
+    float:left;
+    width:200px;
+    height:100px;
+    background-color: darkgoldenrod;
+}
+#footer>#foot-menu{
+    float:left;
+    width:600px;
+    height:100px;
+    background-color: darkgrey;
+}
+#footer>#foot-menu>#hadan{
+    width:600px;
+    height:50px;
+    background-color: bisque;
+}
+#footer>#foot-menu>#copy{
+    width:600px;
+    height:50px;
+    background-color: crimson;
+}
+#slide>img{
+    float:left;
+    display:block;
+}
+#slide{
+    overflow:hidden;
+}
+#right-side>#content>div>img{
+    width:266.66px;
+    height:200px;
+    box-sizing: border-box;
+}
+#gnb{
+    position:relative;
+    display:inline-block;
+}
+#lnb{
+    display:none;
+    position:absolute;
+    z-index:1;
+}
+#lnb>a{
+    display:block;
+}
+#gnb:hover>#lnb{
+    display:block;
+}

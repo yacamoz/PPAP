@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#menu>li").eq(2).css({
+                "backgroundColor": "yellow",
+                "border": "2px dashed blue"
+            })
+            //equal
+        })
+    </script>
+</head>
+
+<body>
+    <ul id="menu">
+        <li>리스트1(index:0)</li>
+        <li>리스트2(index:1)</li>
+        <li>리스트3(index:2)</li>
+        <li>리스트4(index:3)</li>
+        <li>리스트5(index:4)</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 5000px;
+            height: 10000px;
+        }
+
+        #wrap {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: fixed;
+            left: 50px;
+            top: 50px;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).on("scroll", function () {
+                var sc_top = $(this).scrollTop();
+                var sc_left = $(this).scrollLeft();
+                $(".top").text(sc_top);
+                $(".left").text(sc_left);
+            })
+        })
+        //window객체에서 (브라우저 전체 화면)
+        //scroll이벤트가 발생하면 익명함수 function(){}실행
+        // .on("scroll", function() { ... } )
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <p>scrollTop:<span class="top">0</span>px</p>
+        <p>scrollLeft:<span class="left">0</span>px</p>
+    </div>
+</body>
+
+</html>

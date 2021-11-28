@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> JSON </title>
+<script src="./js/jquery.js"></script>
+
+</head>
+  <body>
+    <div id="dog_list">
+
+    </div>
+  
+  </body>
+
+  <script>
+
+    //JSON배열
+    var dog = [
+      {name:'푸들',age:1,country:'영국'}, //dog[0]
+      {name:'진돗개',age:2,country:'한국'}, //dog[1]
+      {name:'시바',age:3,country:'일본'} //dog[2]
+      ]
+  
+      dog.push({name:'셰퍼드',age:4,country:'독일'});
+      var dogList = document.getElementById("dog_list");
+      var div=null;
+      var span=null;
+      var text_name='';
+      var text_age='';
+      var text_country='';
+  
+      for(var i=0; i<dog.length; i++){
+      div=document.createElement('div');
+      div.style.border='1px solid black';
+      div.style.width='150px';
+      div.style.height='50px';
+      
+      span=document.createElement('span');
+      span.style.border='1px solid black';
+      span.style.marginRight='3px';
+      text_name=document.createTextNode(dog[i].name);
+      span.appendChild(text_name);
+      div.appendChild(span);
+      span=null;
+  
+      span=document.createElement('span');
+      span.style.border='1px solid black';
+      span.style.marginRight='3px';
+      text_age=document.createTextNode(dog[i].age);
+      span.appendChild(text_age);
+      div.appendChild(span);
+      span=null;
+      
+      span=document.createElement('span');
+      span.style.border='1px solid black';
+      span.style.marginRight='3px';
+      text_country=document.createTextNode(dog[i].country);
+      span.appendChild(text_country);
+      div.appendChild(span);
+      span=null;
+  
+      dogList.appendChild(div);
+      }
+  
+  </script>
+</html>

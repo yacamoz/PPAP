@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my_red {
+            color: red;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('span').addClass("my_red") //클래스 추가
+            //<span class="my_red">스팬</span>
+            $('span').removeClass("my_red") //클래스 제거
+            //<span>스팬</span>
+        })
+    </script>
+</head>
+
+<body>
+    <span>스팬</span>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대-수의 법칙</title>
+</head>
+<body>
+    <script>
+        var j=prompt("횟수 입력");
+        j=Number(j);
+        var diceArr = [0,0,0,0,0,0];
+        for(var i=0;i<j;i++) {
+            var rand=Math.random();
+            var dice=Math.floor(rand*6+1);
+            for(var h=1;h<=6;h++){
+                if(dice==h)
+                {
+                    diceArr[h-1]+=1;
+                }
+            }
+        }
+        var total=0;
+        for(var i=0;i<6;i++) {
+            total+=diceArr[i];
+        }
+        for(var i=0;i<6;i++){
+            document.write((diceArr[i]/total)*100, "% <br>");
+        }
+    </script>
+</body>
+</html>

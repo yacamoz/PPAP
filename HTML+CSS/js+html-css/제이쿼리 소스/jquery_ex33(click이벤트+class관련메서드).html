@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                var result = $("#my_div").hasClass("active")
+                //클래스 active가 존재하는지?
+                //hasClass의 리턴값으로 판단
+                //true리턴 - 존재, false리턴 - 없다
+                if (result == true) {
+                    $("#my_div").removeClass("active")
+                } else if (result == false) {
+                    $("#my_div").addClass("active")
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div id="my_div">
+        영역
+    </div>
+    <button id="btn">클릭</button>
+</body>
+
+</html>

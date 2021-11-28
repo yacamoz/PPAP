@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //짝수단만 찍기
+        for (var dan = 2; dan <= 9; dan++) { //외부 for문
+            if (dan % 2 == 0) {
+                for (var i = 1; i <= 9; i++) { //내부 for문
+                    document.write(dan + "x" + i + "=" + (dan * i), "<br>");
+                }
+                document.write("<br>")
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
